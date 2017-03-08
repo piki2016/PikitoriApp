@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="piki.example.com.loginpikiapp.pikitori.ui.Login.LoginUserActivity">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:background="@color/piki2_color"
+        android:id="@+id/warningWindow"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/main_vertical_margin"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/round"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:ems="10"
+            android:hint="이메일"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/round"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/checkBox_login_keep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="로그인 유지" />
+
+        <Button
+            android:id="@+id/btn_login_connect"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/pikitori_btn"
+            android:text="로그인"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="계정이 없나요?" />
+
+            <TextView
+                android:id="@+id/btn_create_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="계정만들기"
+                android:textColor="#6e9ded" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textview_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="비밀번호를 잊으셨나요?" />
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.facebook.login.widget.LoginButton
+                android:scaleType="centerInside"
+                android:id="@+id/btn_facebook_login"
+                android:layout_width="300px"
+                android:layout_height="match_parent"
+                fb:com_facebook_preset_size="normal"
+                fb:com_facebook_login_text=" 로그인 "
+                android:layout_marginTop="3dip"
+                android:paddingTop="13sp"
+                android:paddingBottom="13sp"
+                android:layout_marginRight="10px"
+                />
+
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_google_login"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

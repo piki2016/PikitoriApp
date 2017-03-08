@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="piki.example.com.loginpikiapp">
+
+    <uses-feature
+        android:name="android.hardware.CAMERA"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".pikitori.core.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- [START fcm_default_icon] -->
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!-- [END fcm_default_icon] -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD7QYMUXSLSinsZ1Jtfe5keXg-7cYF4uIQ" />
+
+        <activity android:name=".pikitori.ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pikitori.ui.Login.LoginUserActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pikitori.ui.SplashActivity" />
+        </activity>
+        <activity android:name=".pikitori.ui.Login.JoinUserActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pikitori.ui.SplashActivity" />
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pikitori.ui.main.pikiMainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pikitori.ui.SplashActivity" />
+        </activity>
+        <activity android:name=".pikitori.ui.main.ProfileViewActivity" />
+        <activity android:name=".pikitori.ui.main.profile.ProfileModifyActivity" />
+        <activity android:name=".pikitori.ui.main.post.PostImageSelectActivity" />
+        <activity android:name=".pikitori.ui.main.post.PostImageListActivity" />
+        <activity android:name=".pikitori.ui.main.post.PostWriteActivity" />
+        <activity android:name=".pikitori.ui.main.post.ImageGalleryActivity" />
+        <activity android:name=".pikitori.ui.main.reply.ReplyListActivity" />
+        <activity android:name=".pikitori.ui.main.search.SearchActivity" />
+        <activity android:name=".pikitori.ui.main.follow.FollowActivity" />
+        <activity android:name=".pikitori.ui.main.follow.FollowerActivity" />
+        <activity android:name=".pikitori.ui.main.setting.SettingActivity" />
+        <activity
+            android:name=".pikitori.ui.main.post.update.PostUpdateActivity"
+            android:label="@string/title_activity_post_update" />
+        <activity
+            android:name=".pikitori.ui.main.post.relay.PostRelayActivity"
+            android:label="@string/title_activity_post_relay" />
+        <activity android:name=".pikitori.ui.main.post.PostTagListActivity"></activity>
+        <activity android:name=".pikitori.ui.main.camera.CameraActivity"></activity>
+
+        <!-- [START firebase_service] -->
+        <service
+            android:name=".pikitori.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service
+            android:name=".pikitori.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <!-- [END firebase_iid_service] -->
+        <activity android:name=".pikitori.ui.main.setting.IntroduceActivity" />
+        <activity android:name=".pikitori.ui.main.setting.PasswordChangeActivity"></activity>
+    </application>
+
+</manifest>

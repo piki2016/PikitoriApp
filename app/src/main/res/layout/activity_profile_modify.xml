@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile_modify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="piki.example.com.loginpikiapp.pikitori.ui.main.profile.ProfileModifyActivity">
+
+    <ImageView
+        android:id="@+id/profile_background"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:background="#7EA7AD"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/profile_background">
+
+        <ImageView
+            android:id="@+id/emailIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/ic_email" />
+
+        <ImageView
+            android:id="@+id/nicknameIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/emailIcon"
+            android:layout_below="@+id/emailIcon"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_nickname" />
+
+        <ImageView
+            android:id="@+id/profileMsgIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nicknameIcon"
+            android:layout_below="@+id/nicknameIcon"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_statusmessage" />
+
+        <TextView
+            android:id="@+id/userId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nicknameIcon"
+            android:layout_marginBottom="32dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/emailIcon"
+            android:text="계정" />
+
+        <TextView
+            android:id="@+id/userNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nicknameIcon"
+            android:layout_marginBottom="-32dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/emailIcon"
+            android:text="닉네임" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/userNickname"
+            android:layout_alignTop="@+id/nicknameIcon"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/profileMsgIcon"
+            android:layout_marginBottom="-32dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/emailIcon"
+            android:text="상태메세지" />
+
+        <EditText
+            android:id="@+id/etUserProfileMsg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/userNickname"
+            android:layout_alignTop="@+id/profileMsgIcon"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvUserId"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nicknameIcon"
+            android:layout_alignStart="@+id/userId"
+            android:layout_marginBottom="8dp"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <piki.example.com.loginpikiapp.pikitori.ui.main.post.RoundedImageView
+        android:id="@+id/ProfileImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@id/layoutBottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-60dp" />
+</RelativeLayout>

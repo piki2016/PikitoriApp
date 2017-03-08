@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reply_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="piki.example.com.loginpikiapp.pikitori.ui.main.reply.ReplyListActivity"
+    android:weightSum="1">
+
+
+    <ListView
+        android:id="@+id/reply_list"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:background="#f9f9f9"
+        android:layout_above="@+id/frameLayout"
+        android:layout_weight="1.00">
+    </ListView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/frameLayout">
+
+        <EditText android:id="@+id/edit_reply_write"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="5"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:hint="댓글쓰기"
+            android:minWidth="10.0dip"
+            android:maxWidth="5.0dip"/>
+
+        <ImageView
+            android:id="@+id/btn_create_reply"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_create_black_24dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

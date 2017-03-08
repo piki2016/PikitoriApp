@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 탭의 배경색 -->
+    <color name="bg_color_tab">#FFFFFF</color>
+
+    <!-- 탭을 눌렀을 때 배경색 -->
+    <color name="bg_color_tab_pressed">#A7D0F5</color>
+
+    <!-- 선택된 탭의 바닥바 색상 -->
+    <color name="bg_color_tab_selbar_selected">#AFABAB</color>
+
+    <!-- 기본 탭 택스트 색상 -->
+    <color name="text_color_tab">#A4A7AE</color>
+
+    <!-- 눌렀을 때 탭 택스트 색상 -->
+    <color name="text_color_tab_pressed">#FEFEFE</color> ->
+
+    <!-- 탭의 1dp의 바닥 라인 -->
+    <color name="line_color_tab">#DDDDDD</color>
+
+
+</resources>

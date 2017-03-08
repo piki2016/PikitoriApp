@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LoginPikiApp</string>
+    <!-- facebook -->
+    <string name="app_id">2029849690575146</string>
+    <string name="fb_login_protocol_scheme">fb2029849690575146</string>
+    <!-- google -->
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="loading">Loading…</string>
+    <string name="title_activity_post_image_list">PostImageListActivity</string>
+    <string name="tag">#%s</string>
+    <string name="btn_heart">좋아요 %s 개</string>
+    <string name="btn_reply">댓글 %s 개</string>
+    <string name="title_activity_post_update">PostUpdateActivity</string>
+    <string name="title_activity_post_relay">PostRelayActivity</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_join_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="piki.example.com.loginpikiapp.pikitori.ui.Login.JoinUserActivity">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:background="@color/piki2_color"
+        android:id="@+id/warningWindow"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/round"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:ems="10"
+            android:hint="이메일"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/round"
+            android:drawableLeft="@drawable/ic_face_black_24dp"
+            android:ems="10"
+            android:hint="닉네임"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/round"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editText_password_confirm"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/round"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:ems="10"
+            android:hint="비밀번호확인"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:text="등록을 하면 개인정보 보호 정책 및 약관에 동의하게 됩니다."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_join_connect"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pikitori_btn"
+            android:text="계정만들기"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.facebook.login.widget.LoginButton
+            android:scaleType="centerInside"
+            android:id="@+id/btn_facebook_login"
+            android:layout_width="300px"
+            android:layout_height="match_parent"
+            fb:com_facebook_preset_size="normal"
+            fb:com_facebook_login_text=" 로그인 "
+            android:layout_marginTop="3dip"
+            android:paddingTop="13sp"
+            android:paddingBottom="13sp"
+            android:layout_marginRight="10px"
+            />
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_google_login"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="이미 계정이 있나요?" />
+
+        <TextView
+            android:id="@+id/btn_goto_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="로그인"
+            android:textColor="#6e9ded" />
+
+    </LinearLayout>
+
+</LinearLayout>

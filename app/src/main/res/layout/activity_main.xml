@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="piki.example.com.loginpikiapp.pikitori.ui.SplashActivity">
+
+    <ImageView
+        android:id="@+id/background_one"
+        android:scaleType="centerCrop"
+        android:layout_width="1400dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"/>
+
+    <ImageView
+        android:id="@+id/background_two"
+        android:scaleType="centerCrop"
+        android:layout_width="1400dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pikitori_main_letter"
+            android:id="@+id/imageView"
+            android:layout_marginTop="74dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="29dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="시 작 하 기"
+            android:textSize="20dp"
+            android:textColor="#D9D9D9"
+            android:textStyle="bold"
+            android:background="@drawable/pikitori_btn_start"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_start"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="11dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이미 계정이 있나요? "
+                android:textColor="#FFFFFF"
+                />
+
+            <TextView
+                android:id="@+id/btn_login"
+                android:text="로그인"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

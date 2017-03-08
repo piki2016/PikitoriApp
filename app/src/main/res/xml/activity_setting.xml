@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="기본 정보">
+        <Preference
+            android:title="나의 프로필 수정"
+            android:summary="프로필 정보를 수정합니다.">
+            <intent
+                android:targetClass="piki.example.com.loginpikiapp.pikitori.ui.main.profile.ProfileModifyActivity"
+                android:targetPackage="piki.example.com.loginpikiapp"/>
+        </Preference>
+
+<!--        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/postPublicSetting"
+            android:entryValues="@array/postPublicSetting_values"
+            android:key="postPublicSetting"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="계정 공개 설정">
+        </ListPreference>-->
+
+
+        <Preference
+            android:title="비밀번호변경"
+            android:summary="변경할 비밀번호를 입력하세요"
+            android:key="password_change" />
+
+
+
+
+     <!--   <EditTextPreference
+            android:defaultValue="Mir"
+            android:dependency="useUserName"
+            android:key="userName"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="사용자 이름 설정" />-->
+    </PreferenceCategory>
+<!--    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="useUserName"
+        android:summaryOff="사용자의 이름을 사용하지 않습니다"
+        android:summaryOn="사용자의 이름을 사용합니다"
+        android:title="사용자 이름 사용" />
+
+    -->
+
+
+
+    <PreferenceCategory android:title="어플 설정">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="gps_use_setting"
+            android:summary="GPS 사용 On/Off"
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:title="GPS" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="나의 계정 정보" >
+        <Preference
+            android:key="logout"
+            android:title="로그아웃">
+        </Preference>
+        <Preference
+            android:key="facebook_logout"
+            android:title="페이스북 로그아웃">
+        </Preference>
+        <Preference
+            android:key="google_logout"
+            android:title="구글 로그아웃">
+        </Preference>
+
+
+
+        <!--<CheckBoxPreference-->
+            <!--android:defaultValue="false"-->
+            <!--android:dependency="autoUpdate"-->
+            <!--android:key="useUpdateNofiti"-->
+            <!--android:summary="업데이트후 알림을 띄웁니다"-->
+            <!--android:title="알림 사용" />-->
+
+        <!--<RingtonePreference-->
+            <!--android:defaultValue="content://settings/system/notification_sound"-->
+            <!--android:dependency="useUpdateNofiti"-->
+            <!--android:key="autoUpdate_ringtone"-->
+            <!--android:ringtoneType="notification"-->
+            <!--android:showSilent="true"-->
+            <!--android:title="알림 소리" />-->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="어플 정보" >
+
+        <Preference
+            android:summary="개발자 정보를 확인합니다"
+            android:title="개발자 정보"
+            android:key="developerInfo">
+        </Preference>
+
+        <Preference
+            android:title="버전정보"
+            android:summary="1.0.0">
+
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

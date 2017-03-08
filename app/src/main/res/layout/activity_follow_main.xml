@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=""
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7EA7AD"
+        android:orientation="horizontal"
+        android:layout_weight="0.05">
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="match_parent">
+
+            <com.example.pikitoryprofilesample.ui.RoundedImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/ImageView"
+                android:contentDescription=""
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="29dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="유저의 아이디"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:textAlignment="center"
+                android:id="@+id/textView"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="11dp"
+                android:layout_below="@+id/ImageView"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dip">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="888"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/textView6"
+                    android:layout_marginStart="30dp"/>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="888"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/textView7"
+                    />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="888"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/textView5"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dip">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="게시물"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:id="@+id/textView2"
+                    android:layout_marginStart="30dp" />
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="팔로우"
+                    android:textColor="#FFF"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:id="@+id/followList_btn"
+                    />
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="팔로워"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:id="@+id/followerList_btn"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip">
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:background="#A9D18E"
+                    android:id="@+id/follow_btn"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_marginStart="30dp">
+                </Button>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0" />
+    </TabHost>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

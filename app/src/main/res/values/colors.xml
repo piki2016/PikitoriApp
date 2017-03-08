@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="fab1_color">#4CAF50</color>
+    <color name="fab2_color">#2196F3</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="video_thumbnail_placeholder_color">#cccccc</color>
+
+    <color name="piki1_color">#657BFF</color>
+    <color name="piki2_color">#ADDBDF</color>
+    <color name="piki3_color">#85B858</color>
+    <color name="piki4_color">#617F44</color>
+    <color name="piki5_color">#99857A </color>
+    <color name="piki6_color">#7EBA8A</color>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "153221288967",
+    "project_id": "pikilogin"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153221288967:android:cf568f34b21c9445",
+        "android_client_info": {
+          "package_name": "piki.example.com.loginpikiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153221288967-vsla51mgmtsdaeb3p35njmdqmkop99ro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "piki.example.com.loginpikiapp",
+            "certificate_hash": "C076B2335E2473326E0E27A5923D5AE8A34FF5AB"
+          }
+        },
+        {
+          "client_id": "153221288967-jcr6vbtdmopcdmbvopra7414qhuqml6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlSMsgYdq585lClhPDG3-hZVRhw_IULQQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

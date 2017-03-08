@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="piki.example.com.loginpikiapp.pikitori.ui.main.post.update.PostUpdateActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.volokh.danylo.video_player_manager.ui.VideoPlayerView
+        android:visibility="visible"
+        android:id="@+id/post_update_video"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/video_cover"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"/>
+    </FrameLayout>
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" 비디오를 수정할수 없습니다." />
+
+    <RadioGroup
+        android:id="@+id/post_update_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+        <RadioButton
+            android:id="@+id/post_update_radioPublic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:clickable="true"
+            android:text="공개"/>
+
+        <RadioButton
+            android:id="@+id/post_update_radioPrivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:text="비공개"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/post_update_editTextPost"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="글을 입력하세요."
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+</LinearLayout>
